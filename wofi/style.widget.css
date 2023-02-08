@@ -1,0 +1,41 @@
+/*
+Arc-Dark Color Scheme
+*/
+
+@define-color highlight #5294e2;
+@define-color base1  #404552;
+@define-color base3  #4b5160;
+
+*{
+    font-family: Noto Sans;
+    font-size: 16px;
+}
+
+#window {
+    border: 2px solid @highlight;
+    margin: 0px 5px 0px 5px;
+}
+
+#outer-box {
+    margin: 5px;
+    padding:10px;
+    margin-top: -22px;
+}
+
+#text {
+    padding: 5px;
+    color: white;
+}
+
+#entry:nth-child(even) {
+    background-color: @base1;
+}
+
+#entry {
+    background-color: @base3;
+}
+
+#entry:selected {
+    background-color: @highlight;
+}
+
